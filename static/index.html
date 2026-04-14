@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <main>
-        <h1>Найди себе друга!</h1>
+<main>
+    <h1>Найди себе друга!</h1>
 
+    <form action="/pets/orders" method="post">
+        <label>
+            Вид животного
+            <input type="text" name="petType" value="Кошка">
+        </label>
+        <label>
+            Пол
+            <select name="gender">
+                <option value="female" selected>Женский</option>
+                <option value="male">Мужской</option>
+            </select>
+        </label>
+        <label>
+            Цвет глаз
+            <input type="text" name="eyeColor" value="Голубой">
+        </label>
+        <label>
+            Длина хвоста
+            <input type="number" name="tailLength" value=30>
+        </label>
+        <button type="submit">Submit</button>
+        <input type="reset" value="Reset"/>
+    </form>
         <form action="/pets/orders" method="post">
             <label>
                 Ваше имя
@@ -36,7 +57,6 @@
 
         </form>
 
-    </main>
+</main>
 </body>
-
 </html>
