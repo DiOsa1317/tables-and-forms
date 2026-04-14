@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<main>
-    <h1>Найди себе друга!</h1>
+    <main>
+        <h1>Найди себе друга!</h1>
 
-    <form action="/pets/orders" method="post">
-        <button type="submit">Submit</button>
-    </form>
+        <form action="/pets/orders" method="post">
+            <label>
+                Ваше имя
+                <input type="text" name="name" value="Полкан" placeholder="Введите имя" required>
+            </label>
+            <label>
+                Дата рождения
+                <input type="date" name="dateOfBirth" value="2021-05-17" placeholder="2026-04-14" required>
+            </label>
+            <label>
+                Email
+                <input type="email" name="email" value="polkan2006@gmail.com" placeholder="your_email@gmail.com" required>
+            </label>
+            <label>
+                Номер телефона
+                <input type="tel" name="phone" value="88005553535" placeholder="+73434563212" required>
+            </label>
+            <label>
+                Правила
+                <input type="textarea" name="rules" value="Покладистый рыжий" placeholder="Напиши пожелания по характеру" required>
+            </label>
+            <button type="submit">Submit</button>
 
-</main>
+        </form>
+
+    </main>
 </body>
+
 </html>
